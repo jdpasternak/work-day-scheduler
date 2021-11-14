@@ -66,4 +66,30 @@ textarea.form-control {
   .border {
     border-color: gray !important;
   }
-} ;
+}
+
+@media screen and (max-width: 576px) {
+  div.row {
+    margin-top: 1rem !important;
+  }
+
+  .hour {
+    text-align: center !important;
+    border: none !important;
+  }
+
+  span {
+    padding: 0.5rem;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .today {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    background-color: inherit;
+  }
+}
