@@ -35,3 +35,35 @@ textarea.form-control {
   background-color: inherit;
   resize: none;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: gray;
+  }
+
+  .bg-past {
+    background-color: rgb(48, 48, 48);
+  }
+
+  .bg-current {
+    background-color: darkred;
+  }
+
+  .bg-future {
+    background-color: darkgreen;
+  }
+
+  textarea:focus {
+    background-color: gray !important;
+  }
+
+  .save-btn {
+    background-color: darkblue !important;
+    color: gray !important;
+  }
+
+  .border {
+    border-color: gray !important;
+  }
+} ;
