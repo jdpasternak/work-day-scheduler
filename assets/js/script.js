@@ -59,6 +59,14 @@ var saveData = function () {
   localStorage.setItem("timeblocks", JSON.stringify(timeblocks));
 };
 
+var loadData = function () {
+  var savedData = JSON.parse(localStorage.getItem("timeblocks"));
+  timeblocks = savedData;
+  savedData.forEach((tb) => {
+    $(`#${tb.id}`).children().val(tb.text);
+  });
+};
+
 var auditTimeblocks = function () {
   $(".timeblock").each(function (tb) {
     var now = DateTime.now();
@@ -76,4 +84,5 @@ var auditTimeblocks = function () {
   });
 };
 
+loadData();
 setInterval(auditTimeblocks(), 1800000);
