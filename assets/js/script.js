@@ -61,6 +61,9 @@ var saveData = function () {
 
 var loadData = function () {
   var savedData = JSON.parse(localStorage.getItem("timeblocks"));
+  if (savedData === null) {
+    return false;
+  }
   timeblocks = savedData;
   savedData.forEach((tb) => {
     $(`#${tb.id}`).children().val(tb.text);
