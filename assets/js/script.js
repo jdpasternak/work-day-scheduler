@@ -84,5 +84,14 @@ var auditTimeblocks = function () {
   });
 };
 
+$("#today").text(
+  DateTime.now().toLocaleString({
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    weekday: "long",
+  })
+);
+
 loadData();
 setInterval(auditTimeblocks(), 1800000);
