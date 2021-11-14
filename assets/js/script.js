@@ -52,7 +52,12 @@ $(".save-btn").click(function (event) {
       tb.text = timeblockObj.text;
     }
   });
+  saveData();
 });
+
+var saveData = function () {
+  localStorage.setItem("timeblocks", JSON.stringify(timeblocks));
+};
 
 var auditTimeblocks = function () {
   $(".timeblock").each(function (tb) {
