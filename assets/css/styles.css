@@ -1,0 +1,17 @@
+/* TODO: Fix border-left-style to make dashed */
+
+.bg-past {
+  background-color: lightgray;
+}
+
+.bg-current {
+  background-color: salmon;
+}
+
+.bg-future {
+  background-color: lightgreen;
+}
+
+div.rounded-end:hover span {
+  color: black;
+}
