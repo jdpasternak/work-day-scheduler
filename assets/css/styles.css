@@ -54,7 +54,12 @@ textarea.form-control {
     background-color: darkgreen;
   }
 
+  textarea {
+    color: rgb(197, 197, 197) !important;
+  }
+
   textarea:focus {
+    color: rgb(48, 48, 48) !important;
     background-color: gray !important;
   }
 
