@@ -1,5 +1,59 @@
 var DateTime = luxon.DateTime;
 
+var timeblocks = [
+  {
+    id: "_9",
+    text: "",
+  },
+  {
+    id: "_10",
+    text: "",
+  },
+  {
+    id: "_11",
+    text: "",
+  },
+  {
+    id: "_12",
+    text: "",
+  },
+  {
+    id: "_13",
+    text: "",
+  },
+  {
+    id: "_14",
+    text: "",
+  },
+  {
+    id: "_15",
+    text: "",
+  },
+  {
+    id: "_16",
+    text: "",
+  },
+  {
+    id: "_17",
+    text: "",
+  },
+];
+
+$(".save-btn").click(function (event) {
+  var timeblockText = $(this).prev().children().val();
+  var timeblockId = $(this).prev().attr("id");
+  var timeblockObj = {
+    id: timeblockId,
+    text: timeblockText,
+  };
+
+  timeblocks.forEach((tb) => {
+    if (tb.id === timeblockObj.id) {
+      tb.text = timeblockObj.text;
+    }
+  });
+});
+
 var auditTimeblocks = function () {
   $(".timeblock").each(function (tb) {
     var now = DateTime.now();
