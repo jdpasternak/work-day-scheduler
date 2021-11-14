@@ -15,6 +15,15 @@
 div.rounded-end:hover span {
   color: black;
 }
+div.rounded-end:hover {
+  cursor: pointer;
+}
+
+.hour {
+  border-style: dashed !important;
+  border-left-style: none !important;
+  border-right-style: solid !important;
+}
 
 .timeblock {
   padding: 0;
@@ -22,7 +31,6 @@ div.rounded-end:hover span {
 
 textarea.form-control {
   margin: 0;
-  padding: 0;
   border: none;
   background-color: inherit;
   resize: none;
