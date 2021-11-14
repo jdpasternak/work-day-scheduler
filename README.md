@@ -6,7 +6,9 @@ An app to play your work day.
 
 ## Screenshot
 
-![A mockup of the to-be-finished app.](./assets/images/mockup.gif)
+![A screenshot of the finished app.](./assets/images/screenshot.PNG)
+
+![A demo of the finished app](./assets/images/demo.gif)
 
 ## Live Site
 
